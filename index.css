@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.frame{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    z-index : 2;
+    background-color: black;
+}
+
+header{
+    font-size: 50px;
+    color: white;
+    filter: drop-shadow(0 0 20px white);
+}
+
+button{
+    width: 7vw;
+    height: 8.5vh;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    position: absolute;
+    
+}
+
+#yes{
+    left: 40%;
+    transition: background-color linear 0.3s;
+}
+
+#no{
+    transition: linear 0.1s;
+}
+
+button:hover{
+    background-color: rgb(241, 84, 84);
+}
+
+#afterframe{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: black;
+}
+
+.Heart{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    z-index: 0;
+}
+.Left{
+    width: 80%;
+    height: 100%;
+    border-radius: 100% 100% 0 0;
+    rotate: -55deg;
+    position: absolute;
+}
+.Right{
+    width: 80%;
+    height: 100%;
+    border-radius: 100% 100% 0 0;
+    rotate: 55deg;
+    position: absolute;
+    left: 36%;
+}
+
+#Heart1{
+    width: 65px;
+    height: 65px;
+    top: 10%;
+    left: 50%;
+    animation: heart 11s linear infinite;
+}
+#LeftHeart1{
+    filter: drop-shadow(0px 0 20px red);
+    background-color: red;
+}
+#RightHeart1{
+    filter: drop-shadow(0px 0 20px red);
+    background-color: red;
+}
+
+
+#Heart2{
+    width: 90px;
+    height: 90px;
+    top: 10%;
+    left: 20%;
+    animation: heart 9s linear infinite;
+}
+#LeftHeart2{
+    filter: drop-shadow(0px 0 20px pink);
+    background-color: pink;
+}
+#RightHeart2{
+    filter: drop-shadow(0px 0 20px pink);
+    background-color: pink;
+}
+
+#Heart3{
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 80%;
+    animation: heart 10s linear infinite;
+}
+#LeftHeart3{
+    filter: drop-shadow(0px 0 20px rgb(37, 121, 224));
+    background-color: rgb(37, 121, 224);
+}
+#RightHeart3{
+    filter: drop-shadow(0px 0 20px rgb(37, 121, 224));
+    background-color: rgb(37, 121, 224);
+}
+
+#Heart4{
+    width: 70px;
+    height: 70px;
+    top: 10%;
+    left: 40%;
+    animation: heart 18s linear infinite;
+}
+#LeftHeart4{
+    filter: drop-shadow(0px 0 20px rgb(180, 63, 17));
+    background-color: rgb(180, 63, 17);
+}
+#RightHeart4{
+    filter: drop-shadow(0px 0 20px rgb(180, 63, 17));
+    background-color: rgb(180, 63, 17);
+}
+ 
+#Heart5{
+    width: 110px;
+    height: 110px;
+    top: 10%;
+    left: 90%;
+    animation: heart 14s linear infinite;
+}
+#LeftHeart5{
+    filter: drop-shadow(0px 0 20px rgb(89, 214, 70));
+    background-color: rgb(89, 214, 70);
+}
+#RightHeart5{
+    filter: drop-shadow(0px 0 20px rgb(89, 214, 70));
+    background-color: rgb(89, 214, 70);
+}
+
+#Heart6{
+    width: 70px;
+    height: 70px;
+    top: 10%;
+    left: 64%;
+    animation: heart 12s linear infinite;
+}
+#LeftHeart6{
+    filter: drop-shadow(0px 0 20px rgb(14, 81, 215));
+    background-color: rgb(14, 81, 215);
+}
+#RightHeart6{
+    filter: drop-shadow(0px 0 20px rgb(14, 81, 215));
+    background-color: rgb(14, 81, 215);
+}
+
+#Heart7{
+    width: 70px;
+    height: 70px;
+    top: 10%;
+    left: 5%;
+    animation: heart 15s linear infinite;
+}
+#LeftHeart7{
+    filter: drop-shadow(0px 0 20px rgb(221, 182, 54));
+    background-color: rgb(221, 182, 54);
+}
+#RightHeart7{
+    filter: drop-shadow(0px 0 20px rgb(221, 182, 54));
+    background-color: rgb(221, 182, 54);
+}
+#Heart8{
+    width: 70px;
+    height: 70px;
+    top: 30%;
+    left: 27%;
+    animation: heart 10s linear infinite;
+}
+#LeftHeart8{
+    filter: drop-shadow(0px 0 20px rgb(243, 63, 3));
+    background-color: rgb(243, 63, 3);
+}
+#RightHeart8{
+    filter: drop-shadow(0px 0 20px rgb(243, 63, 3));
+    background-color: rgb(243, 63, 3);
+}
+
+#AfterMessage{
+    width: 100vw;
+    color: white;
+    filter: drop-shadow(0 0 20px white);
+    position: absolute;
+    left: 38%;
+    top: 50vh;
+    z-index: 1;
+}
+
+@keyframes Heart1 {
+    0%{top: 100vh;}
+    100%{top: -10vh}
+}
