@@ -217,7 +217,7 @@ button:hover{
     color: white;
     filter: drop-shadow(0 0 20px white);
     position: absolute;
-    left: 35%;
+    left: 40%;
     top: 45vh;
     z-index: 1;
 }
