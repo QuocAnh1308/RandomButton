@@ -8,11 +8,11 @@ let ScreenHeight = screen.height;
 
 if(ScreenWidth < ScreenHeight)
 {
+    AfterMessage.style.left = "35%";
     no.style.width = "10vw";
     yes.style.width = "10vw";
     no.style.height = "3vh";
     yes.style.height = "3vh";
-    AfterMessage.style.left = "35%";
     for(const i of heart)
     {
         getComputedStyle(i).animationDuration = parseInt(getComputedStyle(i).animationDuration) - 2 + "s";
